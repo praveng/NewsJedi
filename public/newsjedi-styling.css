@@ -1,0 +1,209 @@
+.wrapper {
+  max-width: 1200px;
+  width: 80%;
+  margin: auto;
+}
+.chart-container {
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+}
+.form-group {
+  display: flex;
+  align-items: center;
+}
+.title-line {
+  display: flex;
+  align-items: baseline;
+}
+.outer-similar-domains {
+  margin-top: 0 !important;
+}
+#search-term {
+  width: auto !important;
+}
+#timespan-slider-wrapper {
+  max-width: 64%;
+  min-width: fit-content;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+}
+#timespan-value {
+  width: 40px;
+}
+.input-group {
+  position: relative;
+  margin: 10px 0;
+  display: inline-table;
+}
+.input-group > .form-control {
+  width: auto;
+  display: inline;
+}
+.input-group-btn {
+  display: inline-block;
+}
+.tag-container {
+  padding: 4px;
+  min-height: 0px;
+}
+.tag {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin: 1.5px;
+  margin-right: 4px;
+  cursor: pointer;
+  position: relative;
+}
+#similar-domains .tag {
+  background-color: #ccc;
+  color: black;
+  padding: 2px 1px 1px 1px;
+  margin: 1.5px;
+}
+.score-btns {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+.score-btn {
+  width: 16px;
+  height: 11px;
+  line-height: 12px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+.score-plus {
+  color: #18bc9c;
+}
+.btn-outline-secondary {
+  vertical-align: top;
+}
+.score-minus {
+  color: #f25b69;
+}
+.collapse-btn {
+  cursor: pointer;
+}
+#articles-list {
+  padding-left: 0px;
+  margin-top: 0.7rem;
+}
+.main-search-button {
+  display: flex;
+  justify-content: center;
+}
+#search-button {
+  vertical-align: top;
+  background-color: #18bc9c;
+}
+.tag.tag-add {
+  background-color: #18bc9c !important;
+}
+.tag.tag-subtract {
+  background-color: #f25b69 !important;
+}
+.logo {
+  width: auto;
+  height: 4.5rem;
+  margin-bottom: 1rem;
+}
+.row {
+  background-color: #eaeced;
+}
+/* For Firefox */
+.custom-range::-moz-range-track {
+  background-color: #18bc9c !important;
+}
+
+/* For Chrome, Safari, and newer versions of Opera */
+.custom-range::-webkit-slider-runnable-track {
+  background-color: #18bc9c !important;
+}
+.custom-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -2px;
+}
+
+/* For IE */
+.custom-range::-ms-track {
+  background-color: #18bc9c !important;
+  border-color: transparent; /* IE uses border color to style the track */
+  color: transparent; /* This ensures the correct color is used for the thumb */
+}
+.custom-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px; /* width of the handle */
+  height: 12px; /* height of the handle - make it rectangular */
+  background-color: lightgray;
+  background-image: linear-gradient(
+    to bottom,
+    #f0f0f0 0%,
+    #bebebe 50%,
+    #989898 100%
+  );
+  border: 1px solid black;
+  cursor: pointer;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2); /* inner shadow for depth */
+  border-radius: 0px;
+}
+.custom-range::-moz-range-thumb {
+  width: 40px;
+  height: 12px;
+  background-color: lightgray;
+  background-image: linear-gradient(
+    to bottom,
+    #f0f0f0 0%,
+    #bebebe 50%,
+    #989898 100%
+  );
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 0px;
+}
+.custom-range::-ms-thumb {
+  width: 40px;
+  height: 12px;
+  background-color: lightgray;
+  background-image: linear-gradient(
+    to bottom,
+    #f0f0f0 0%,
+    #bebebe 50%,
+    #989898 100%
+  );
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 0px;
+}
+@keyframes rotate-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#refresh-button .fas {
+  animation: rotate-animation 2s linear infinite;
+  background-color: #18bc9c;
+}
+#refresh-button {
+  background-color: #18bc9c;
+  border: transparent;
+  border-radius: 1rem;
+}
+.timespan-slider {
+  width: 15rem;
+  margin-top: 0.4rem;
+}

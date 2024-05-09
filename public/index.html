@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NewsJedi</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./newsjedi-styling.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./newsjedi.js"></script>
+  </head>
+  <body>
+    <div class="wrapper pt-4">
+      <img src="./newsjedi-logo.png" alt="NewsTracker Logo" class="logo">
+      <form id="form_search" class="form">
+        <div class="row">
+          <div class="col-md-6 input-group">
+            <div class="input-group">
+              <label for="search-term" class="mr-2">Keyword Search:</label>
+              <input type="text" id="search-term" class="form-control" placeholder="Enter search term">
+              <button type="button" id="search-button" class="btn btn-primary">Search</button>
+            </div>
+          </div>
+          <div class="col-md-6 input-group">
+            <div class="input-group">
+            <div id="timespan-slider-wrapper" style="margin-left:0px !important" class="ml-3">
+              <label class="timespan-slider" for="timespan-slider" class="mr-2">Similar Publishers:</label>
+              <output id="timespan-value" for="timespan-slider">8</output>
+              <input type="range" class="custom-range" id="timespan-slider" min="0" max="50" value="10">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 input-group">
+            <label style="margin-right:0.7rem !important" for="add-publishers" class="mr-2">Show More Like:</label>
+            <input type="text" id="add-publishers" class="form-control" placeholder="example.com">
+            <button type="button" id="add-btn" class="btn btn-outline-secondary">Add</button>
+            <div class="col-md-6">
+              </div>
+          </div>
+          <div class="col-md-6 input-group">
+            <label for="subtract-publishers" class="mr-2">Show Less Like:</label>
+            <input type="text" id="subtract-publishers" class="form-control" placeholder="example.com">
+            <button type="button" id="subtract-btn" class="btn btn-outline-secondary">Add</button>
+          </div>
+        </div>
+        <div id="outer-similar-domains" class="input-group mt-4">
+          <div class="collapsible-content" id="similar-domains">
+            <!-- tags with domains will appear here -->
+          </div>
+        </div>
+      </form>
+      <div id="refresh-container" class="main-search-button" style="display: none;">
+        <button id="refresh-button" class="btn btn-info">
+          <i class="fas fa-sync-alt"></i> Refresh </button>
+      </div>
+    </div>
+  </body>
+</html>
