@@ -2,9 +2,9 @@ from flask import Flask, request
 import json
 import tldextract
 import os
-from gensim.models import Word2Vec
+from gensim.models import KeyedVectors
 
-model = Word2Vec.load("domain_word2vec_1.model")
+kv = KeyedVectors.load('domain_vectors.kv')
 
 app = Flask(__name__)
 
@@ -17,12 +17,12 @@ def get_regd(url):
 
 def get_similar_domains(pos_domains, neg_domains, limit):
 
-    # Ensure that domains are included in the model before querying
-    neg_domains = [x for x in neg_domains if x in model.wv.key_to_index.keys()]
-    pos_domains = [x for x in pos_domains if x in model.wv.key_to_index.keys()]
+    # Ensure that domains are included in the kv before querying
+    neg_domains = [x for x in neg_domains if x in kv.key_to_index.keys()]
+    pos_domains = [x for x in pos_domains if x in kv.key_to_index.keys()]
 
     # Get similar domains
-    results = model.wv.most_similar(positive=pos_domains, negative=neg_domains, topn=limit)
+    results = kv.most_similar(positive=pos_domains, negative=neg_domains, topn=limit)
 
     formatted_results = [
         {

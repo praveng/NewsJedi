@@ -322,7 +322,7 @@ function displayArticles(articles) {
     const timeAgo = calculateTimeAgo(article.seendate);
     const articleHTML = `
                     <div style="align-items:center; padding: 0.2rem !important;"  class="media border p-3">
-                        <img src="${article.socialimage}" class="mr-3 mt-3" style="margin-top: 0 !important; margin-left: 0.3rem !important; width:120px; height:100px; object-fit: cover; border-radius: 5px;"  onerror="this.src='http:///i.imgur.com/hfM1J8s.png'";this.style.display='none';">
+                        <img src="${article.socialimage}" class="mr-3 mt-3" style="margin-top: 0 !important; margin-left: 0.3rem !important; width:120px; height:100px; object-fit: cover; border-radius: 5px;"  onerror="this.src='https:///i.imgur.com/hfM1J8s.png'";this.style.display='none';">
                         <div class="media-body">
                             <p style="margin-bottom:0.2rem;">   ${article.domain}</p>
                             <h5><a href="${article.url}" target="_BLANK">${article.title}</a></h5>
