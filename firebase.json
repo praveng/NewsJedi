@@ -16,6 +16,14 @@
         }
       },
       {
+        "source": "/apiv2",
+        "run": {
+          "serviceId": "newsjedi",
+          "region": "europe-north1",
+          "pinTag": true
+        }
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }
