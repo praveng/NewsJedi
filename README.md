@@ -4,12 +4,12 @@ Currently live [here](https://newsjedi.online)
 
 ![NewsJedi Logo](public/newsjedi-logo.png)
 
-NewsJedi is a powerful NewsReader App designed to help you easily curate content across a vast landscape of over 11,000 publishers using a machine learning algorithm to find similar publishers.
+NewsJedi is a NewsReader App powered by ML, designed to help you easily filter content across over 11,000 publishers using machine learning.
 
 ## Features
   - ML powered publisher filtering.
   - Responsive design using Bootstrap and jQuery.
-  - Uses live news data powered by Gdelt covering over 11,000 publishers.
+  - Uses live news data from Gdelt covering over 11,000 publishers.
 
 ### Available at
 You can access the NewsJedi app at: [newsjedi.online](https://newsjedi.online)
