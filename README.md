@@ -16,13 +16,22 @@ You can access the NewsJedi app at: [newsjedi.online](https://newsjedi.online)
 
 ### Screenshots
 
-**Desktop View**
+<div align="center">
 
-<img src="screenshots/desktop_view.png" width="600">
+
+**Desktop View**
+<p align="center">
+<img src="screenshots/desktop_view.png" width="800">
+</p>
+
+
 
 **Mobile View**
-
+<p align="center">
 <img src="screenshots/mobile_view.png" width="300">
+</p>
+
+</div>
 
 ## Technology Stack
 
