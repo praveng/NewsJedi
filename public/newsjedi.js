@@ -51,11 +51,10 @@ $("#add-publishers, #subtract-publishers").autocomplete({
 
   });
   $("#refresh-button").on("click", function () {
-    // Assuming `searchGDELT` or a similar function runs the main search
     const searchTerm = $("#search-term").val();
     const publishers = getPublishers();
 
-    searchGDELT(searchTerm, publishers); // Adapt this call to match how you perform a search
+    searchGDELT(searchTerm, publishers); 
   });
 });
 
@@ -162,7 +161,7 @@ function updatePublishers() {
       const similarContainer = document.getElementById("similar-domains");
       similarContainer.innerHTML = "";
       if (data.similar && data.similar.length > 0) {
-        toggleRefreshButton(true); // Call your function here
+        toggleRefreshButton(true); 
       }
       data.similar.forEach((item) => {
         const tag = document.createElement("span");
@@ -221,7 +220,6 @@ function setup() {
 }
 
 function getPublishers() {
-  // This selector should be updated to specifically target only the added publishers
   const addTagsContainer = document
     .querySelector("#add-publishers")
     .parentNode.querySelector(".tag-container");
@@ -232,8 +230,6 @@ function getPublishers() {
     (tag) => `domainis:${tag.textContent.trim().replace(/^-|-\+$/, "")}`,
   );
 
-  // Assuming similar publishers are displayed in a container with an id 'similar-domains'
-  // and you want to include them in your search
   const similarTagsContainer = document.querySelector("#similar-domains");
   const similarTags = similarTagsContainer
     ? similarTagsContainer.querySelectorAll(".tag")
