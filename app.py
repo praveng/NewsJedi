@@ -5,8 +5,8 @@ import os
 from gensim.models import KeyedVectors
 
 # Load keyed vectors
-kv_1 = KeyedVectors.load('domain_vectors.kv')
-kv_2 = KeyedVectors.load('model_apiv2.kv')
+kv_1 = KeyedVectors.load('model_files/domain_vectors.kv')
+kv_2 = KeyedVectors.load('model_files/model_apiv2.kv')
 
 app = Flask(__name__)
 
