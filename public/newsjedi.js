@@ -8,7 +8,7 @@ $(document).ready(function () {
 
   // Load the list of domains from the JSON file
   $.getJSON("domains.json", function (data) {
-    var listOfDomains = data; // Assuming the JSON file contains an array of domain strings
+    var listOfDomains = data;
 
     // Adding autocomplete to the input fields
 let chunkedDomains = {};
