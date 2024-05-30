@@ -6,7 +6,7 @@ from gensim.models import KeyedVectors
 
 # Load keyed vectors
 kv_1 = KeyedVectors.load('model_files/domain_vectors.kv')
-kv_2 = KeyedVectors.load('model_files/model_apiv2.kv')
+#kv_2 = KeyedVectors.load('model_files/model_apiv2.kv')
 
 app = Flask(__name__)
 
@@ -57,9 +57,9 @@ def apiv1():
     return handle_request(kv_1)
 
 
-@app.route('/apiv2')
-def apiv2():
-    return handle_request(kv_2)
+#@app.route('/apiv2')
+#def apiv2():
+#    return handle_request(kv_2)
 
 
 if __name__ == "__main__":
